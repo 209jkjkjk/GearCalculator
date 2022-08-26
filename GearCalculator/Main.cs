@@ -263,6 +263,12 @@ namespace GearCalculator
             var temps = new List<CalcuationTemp>();
             // 交叉链禁用值
             int XCrossChainBanNum = int.Parse(XCrossChainBanTB.Text);
+            // 防止飞轮数量 <= 交叉链禁用值
+            if (XCrossChainBanNum >= configData.FlywheelData.Count())
+            {
+                XCrossChainBanNum = configData.FlywheelData.Count() - 1;
+                XCrossChainBanTB.Text = XCrossChainBanNum.ToString();
+            }
             int CranksetCount = configData.CranksetData.Count();
 
             // 处理单盘特殊情况
