@@ -1,0 +1,17 @@
+{
+  "ConfigName": "classic11speed28t",
+  "FlywheelData": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    28
+  ],
+  "CranksetData": [ 34, 50 ]
+}
